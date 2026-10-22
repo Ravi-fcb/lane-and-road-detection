@@ -2,43 +2,72 @@
 
 ## 📌 Project Overview
 
-Lane and Road Detection is a computer vision project developed using Python and OpenCV. It identifies lane markings and road boundaries from road images or video frames, helping demonstrate how computer vision can be used in intelligent transportation systems and autonomous driving.
+This project demonstrates computer vision techniques using Python and OpenCV for lane detection and vehicle object detection from road scenes.
 
-The project processes road scenes to highlight lane lines and visualize detected road lanes.
+The project identifies lane markings on road images or video frames and highlights detected vehicles using bounding boxes and labels. It demonstrates how image processing and object detection can be applied to intelligent transportation systems and autonomous driving.
 
 ## ✨ Features
 
-- Detects lane markings in road images or video.
-- Processes images using OpenCV.
-- Uses image preprocessing to improve lane detection.
-- Highlights detected lane lines on the road.
-- Demonstrates fundamental computer vision techniques.
-- Provides a foundation for autonomous driving applications.
+- **Lane Detection:** Detects and highlights road lane markings using colored lines.
+- **Vehicle Detection:** Identifies vehicles in road scenes and marks them with bounding boxes.
+- **Image Processing:** Applies computer vision techniques to analyze road images and video frames.
+- **Visual Output:** Displays detected lanes and vehicles in separate output windows.
+- **Road Scene Analysis:** Demonstrates practical applications of computer vision in transportation.
+
+## 🖥️ Project Outputs
+
+### 1. Vehicle Object Detection
+
+The system detects vehicles in a road scene and highlights them with red bounding boxes and labels.
+
+**Output highlights:**
+- Vehicle detection in a snowy road scene.
+- Red bounding boxes around detected vehicles.
+- Labels identifying detected vehicles.
+
+### 2. Lane Detection (Day)
+
+The system detects lane markings on a daytime road and highlights them with bright green lines.
+
+**Output highlights:**
+- Detection of left and right lane boundaries.
+- Green lines overlaid on the road.
+- Visual identification of the drivable lane area.
 
 ## 🛠️ Technologies Used
 
 - **Programming Language:** Python
-- **Computer Vision:** OpenCV
+- **Computer Vision Library:** OpenCV
 - **Numerical Processing:** NumPy
+- **Development Environment:** Visual Studio Code
 
 ## ⚙️ How It Works
 
-The lane detection process can involve the following steps:
+### Lane Detection
 
-1. **Input:** Load a road image or video.
-2. **Preprocessing:** Convert frames to grayscale and apply Gaussian blur to reduce noise.
-3. **Edge Detection:** Use the Canny edge detector to identify road and lane edges.
-4. **Region of Interest (ROI):** Focus on the relevant road area and ignore unnecessary parts of the frame.
-5. **Lane Detection:** Use line detection techniques, such as the Hough Transform, to identify lane markings.
-6. **Visualization:** Draw detected lane lines over the original image or video frame.
+1. Load the road image or video.
+2. Preprocess the frame to reduce noise.
+3. Detect edges and identify relevant road regions.
+4. Detect lane boundaries using image processing techniques.
+5. Draw the detected lane lines on the original frame.
 
-*Note: The exact processing steps depend on the implementation used in the source code.*
+### Vehicle Object Detection
+
+1. Load the road image or video.
+2. Process the frame using the implemented detection method.
+3. Identify vehicles in the scene.
+4. Draw bounding boxes around detected vehicles.
+5. Display the output with vehicle labels.
+
+*Note: The exact algorithms depend on the implementation in the source code.*
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-Make sure Python 3 and pip are installed on your system.
+- Python 3
+- pip
+- Visual Studio Code or another Python IDE
 
 Check your Python installation:
 
@@ -54,7 +83,7 @@ python3 --version
 git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 ```
 
-**2. Navigate to the project directory**
+**2. Navigate to the project folder**
 
 ```bash
 cd YOUR-REPOSITORY
@@ -66,37 +95,44 @@ cd YOUR-REPOSITORY
 pip install opencv-python numpy
 ```
 
-**4. Run the project**
-
-Execute the main Python script:
+**4. Run the lane detection program**
 
 ```bash
-python3 main.py
+python3 lane_detection.py
 ```
 
-Replace `main.py` with the actual Python filename in your repository.
+**5. Run the vehicle detection program**
+
+```bash
+python3 object_detection.py
+```
+
+Replace the script names with the actual filenames in your repository.
 
 ## 🎯 Applications
 
 - Autonomous driving systems
-- Driver assistance systems
-- Road lane monitoring
+- Advanced Driver Assistance Systems (ADAS)
+- Lane departure warning systems
+- Vehicle monitoring and traffic analysis
 - Intelligent transportation systems
-- Computer vision research and learning
+- Road scene understanding
 
 ## 📚 Learning Outcomes
 
-- Understanding image processing using OpenCV.
-- Learning edge detection and image filtering techniques.
-- Exploring lane and road boundary detection.
-- Applying computer vision to real-world transportation problems.
-- Gaining practical experience with Python and NumPy.
+- Understanding image processing with OpenCV.
+- Learning lane boundary detection techniques.
+- Applying object detection to road scenes.
+- Drawing and visualizing detection results.
+- Exploring real-world computer vision applications.
 
 ## 🔮 Future Enhancements
 
 - Real-time lane detection using a webcam.
-- Video-based road detection.
-- Curved lane detection.
-- Lane departure warning systems.
-- Integration with advanced driver assistance systems (ADAS).
-- Deep learning-based lane detection.
+- Improved detection of curved and faded lane markings.
+- Vehicle counting and traffic density estimation.
+- Vehicle speed estimation.
+- Nighttime and adverse-weather lane detection.
+- Integration of lane detection and vehicle detection into one system.
+- Deep learning-based detection for improved accuracy.
+
