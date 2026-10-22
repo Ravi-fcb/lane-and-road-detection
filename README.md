@@ -109,6 +109,21 @@ python3 object_detection.py
 
 Replace the script names with the actual filenames in your repository.
 
+## 🖥️ Project Outputs
+
+### 1. Lane Detection (Day)
+
+This output shows the detected road lane boundaries highlighted in green.
+
+![Lane Detection Output](screenshots/lane-detection.png)
+
+### 2. Vehicle Object Detection
+
+This output shows detected vehicles highlighted with red bounding boxes and labels.
+
+![Vehicle Detection Output](screenshots/vehicle-detection.png)
+
+
 ## 🎯 Applications
 
 - Autonomous driving systems
