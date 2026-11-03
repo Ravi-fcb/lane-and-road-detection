@@ -148,6 +148,6 @@ This output shows detected vehicles highlighted with red bounding boxes and labe
 - Vehicle counting and traffic density estimation.
 - Vehicle speed estimation.
 - Nighttime and adverse-weather lane detection.
-- Integration of lane detection and vehicle detection into one system.
+- Integration of lane detection and vehicle detection into one system
 - Deep learning-based detection for improved accuracy.
 
